@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.phon .container {
+    background: #2c3138;
+    display: flex;
+    width: 100%;
+}
+
+.phon .container .info {
+    width: 50%;
+    color: white;
+    /* text-align: center; */
+    padding: 35px 100px;
+}
+
+.phon .container .info h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.phon .container .img {
+    width: 50%;
+
+}
+
+.phon .container .img img {
+    width: 100%;
+}
+
+.phon .Phon-info {
+    background: #efefef;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.phon .Phon-info .disign {
+    width: 40%;
+    margin-left: 150px;
+    margin-top: -100px;
+
+}
+
+.phon .Phon-info .compact .requerment {
+    display: flex;
+
+}
+
+.phon .Phon-info .compact .requerment h1 {
+    color: #0a82ff;
+}
+
+.phon .Phon-info .compact h1 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.phon .Phon-info .compact .requerment div {
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.phon .Phon-info .disign h1 span {
+    margin: 15px;
+    color: #0a82ff;
+}
+
+.phon .Phon-info .compact {
+    width: 75%;
+}
+
+/* img section */
+.phon .img-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    background: #efefef;
+}
+
+.phon .img-section img {
+    object-fit: cover;
+    width: 45%;
+    margin: 10px;
+}
+
+/* img section end */
+
+/* parfomance */
+.phon .parfomance {
+    background: #00162d;
+    display: flex;
+    width: 100%;
+}
+
+.phon .parfomance .phon-info {
+    width: 40%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.phon .parfomance .phon-info h1 {
+    color: white;
+}
+
+.phon .parfomance .phon-info h1 span {
+    color: #0a82ff;
+}
+
+.phon .parfomance .phon-parformance {
+    width: 60%;
+    margin-top: 90px;
+}
+
+.phon .parfomance .phon-parformance h1 {
+    color: white;
+    font-weight: 500;
+}
+
+.phon .parfomance .phon-parformance p {
+    /* padding: 0 50px; */
+}
+
+.phon .parfomance .phon-parformance {
+    color: white;
+}
+
+.phon .procesor {
+    background: #00162d;
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.phon .procesor-detels .upDown {
+    display: flex;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.phon .procesor-detels .upDown .up {
+    margin-left: 10px;
+}
+
+.phon .procesor-detels .upDown .up h1 span {
+    color: #0a82ff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.phon .procesor-detels .upDown .up h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.phon .procesor-detels .upDown .down {
+    margin-left: 20px;
+}
+
+.phon .procesor-detels .upDown .down h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.phon .procesor-detels .upDown .down h1 span {
+    color: #0a82ff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.phon .procesor .procesor-detels {
+    width: 40%;
+    margin-left: 45px;
+}
+
+.phon .procesor .procesor-detels h1 {
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.phon .procesor .procesor-detels h2 {
+    color: #0a82ff;
+}
+
+.phon .procesor .procesor-detels p {
+    color: white;
+}
+
+.phon .procesor .procesor-img {
+    width: 60%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.phon .procesor .procesor-img img {
+    height: 250px;
+    width: 100%;
+
+}
+
+/* parfomance end */
+
+/* media quarry */
+@media only screen and (max-width: 600px) {
+    .phon .container {
+        display: block;
+    }
+
+    .phon .container .info {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .phon .container .img {
+        display: none;
+    }
+
+    .phon .Phon-info .disign {
+        display: none;
+    }
+
+    .phon .img-section img {
+        width: 95%;
+    }
+
+    .phon .parfomance .phon-info {
+        display: none;
+    }
+
+    .phon .parfomance .phon-parformance {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .phon .procesor .procesor-detels{
+        width: 40%;
+        margin-left: 25px
+    }
+}

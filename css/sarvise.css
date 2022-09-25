@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container .banner img{
+    width: 100%;
+    object-fit: cover;
+    height: 50%;
+}
+.container .store .offline-store{
+    background: #00162d;
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 0;
+    height: 50px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .store .offline-store h2{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.container .store .state{
+    display: flex;
+    align-items: center;
+}
+.container .store .state select{
+    padding: 10px 42px;
+    margin-left: 20px;
+}
+.container .store .state{
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* our center start */
+
+.our-center{
+    background: #efefef;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+.our-center .card{
+    background: white;
+    padding: 25px 35px;
+    margin: 10px 25px;
+
+}
+.our-center .card h3{
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 80%;
+    margin-top: -25px;
+    padding: 10px 0;
+    text-align: center;
+    background: #739ece;
+}
+.our-center .card .card-body{
+    display: flex;
+    margin-top: 25px;
+}
+.our-center .card .card-body .address{
+    padding: 10px;
+}
+.our-center .card .card-body .hours{
+    padding: 10px;
+}
+.our-center .card .card-body p{
+    margin-top: 10px;
+}
+.our-center .card hr{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.our-center .card .info{
+    display: flex;
+    justify-content: space-between;
+}
+.our-center .card .info p{
+    font-size: 17px;
+    font-weight: 900;
+}
+.our-center .card .info span{
+    color: #278eff;
+}
+/* our center end */
+
+
+@media only screen and (max-width: 600px) {
+    .our-center{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
