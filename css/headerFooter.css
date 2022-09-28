@@ -4,7 +4,9 @@
 }
 nav{
     background: #0082e6;
+    position: fixed;
     height: 80px;
+    top: 0;
     width: 100%;
   }
   label.logo{
@@ -134,7 +136,8 @@ nav{
     display: block;
   }
   .footer .info .content{
-    padding: 10px 0px;
+    padding: 10px 15px;
+    line-height: 27px;
   }
   .footer .logo{
     margin-left: 0;

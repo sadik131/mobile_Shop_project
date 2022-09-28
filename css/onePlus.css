@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+section.phon {
+    margin-top: 80px;
+}
+
 
 .phon .container {
     background: #2c3138;

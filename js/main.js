@@ -1,2 +1,2 @@
 // first slider
-// $('.slider-1').slick()
+$('.slider-1').slick()

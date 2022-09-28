@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+section {
+    margin-top: 80px;
+}
 .container .banner img{
     width: 100%;
     object-fit: cover;
-    height: 50%;
+    height: 80vh;
 }
 .container .store .offline-store{
     background: #00162d;
@@ -29,7 +32,7 @@
     align-items: center;
 }
 .container .store .state select{
-    padding: 10px 42px;
+    padding: 10px 30px;
     margin-left: 20px;
 }
 .container .store .state{
@@ -57,5 +60,8 @@
 @media only screen and (max-width: 600px){
     .container .state-info{
         grid-template-columns: repeat(1 , 1fr);
+    }
+    .container .banner img{
+        height: 50%;
     }
 }

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    margin-top: 80px;
+}
 .container .slider-1 img{
     object-fit: cover;
     width: 100%;

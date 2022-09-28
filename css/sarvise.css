@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    margin-top: 80px;
+}
 .container .banner img{
     width: 100%;
     object-fit: cover;
@@ -30,7 +33,7 @@
     align-items: center;
 }
 .container .store .state select{
-    padding: 10px 42px;
+    padding: 10px 24px;
     margin-left: 20px;
 }
 .container .store .state{
@@ -54,7 +57,6 @@
 .our-center .card h3{
     text-transform: uppercase;
     font-size: 17px;
-    width: 80%;
     margin-top: -25px;
     padding: 10px 0;
     text-align: center;
