@@ -9,9 +9,9 @@
   <!-- header and footer css -->
   <link rel="stylesheet" href="../css/headerFooter.css">
   <link rel="stylesheet" href="../css/index.css">
-  
-  <!-- slick slider -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <!-- swpier slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
@@ -42,16 +42,44 @@
 
   <section>
     <div class="container">
-      <!-- <div class="slick-slider">
-        <div class="slider-1">
-          <div class="slick-img">
-            <img height="350px" width="770px" src="../img/2zehbr0vwucdvzyt-0_0_desktop_0_1X.png" alt="" srcset="">
-          </div>
-          <div class="slick-img">
-            <img height="350px" width="770px" src="../img/asus-zenfone-9.png" alt="" srcset="">
+      <div class="banner">
+        <!-- slider one -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/2zehbr0vwucdvzyt-0_0_desktop_0_1X.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/asus-zenfone-9.png" alt="">
+            </div>
           </div>
         </div>
-      </div> -->
+        <!-- slider one end-->
+        <!-- slider two -->
+        <div class="swiper" dir="rtl">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/449ce5370f3d70e461a4dfbf7d7e5af1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/40fb7c9433ca0252ad917f4d01938242.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- slider two end-->
+        <!-- slider three -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/10T-M.jpg.thumb (1).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/Asus-Zenfone-9-hand-friendly-size-camera-01-1200x900.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- slider three end-->
+      </div>
       <div class="order">
         <div class="card">
           <div class="card-info">
@@ -70,8 +98,7 @@
 
   <!-- footer start -->
   <footer>
-    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 160" version="1.1"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg id="wave" style="transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
           <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
@@ -114,17 +141,34 @@
 
 
   <!-- footer end -->
+  <!-- jQuarry plagin -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <!-- main js file -->
   <script src="../js/main.js"></script>
   <!-- font awosom icon -->
   <script src="https://kit.fontawesome.com/66172103ee.js" crossorigin="anonymous"></script>
-    <!-- slick slider -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+  <!-- swiper slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    const swiper1 = new Swiper('.swiper', {
+      autoplay: {
+        delay: 3000
+      },
+      loop: true,
+      changeLanguageDirection: {
+        // direction: "ltr"
+        direction: 'rtl'
+      },
 
-
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>

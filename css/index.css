@@ -12,7 +12,14 @@ section{
 }
 
 /* order start */
-
+.container .banner img{
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    object-fit: inherit;
+    /* margin-top: 96px; */
+    
+}
 .order{
     background: #efefef;
     width: 100%;

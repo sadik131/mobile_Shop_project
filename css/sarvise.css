@@ -9,7 +9,7 @@
 .container .banner img{
     width: 100%;
     object-fit: cover;
-    height: 50%;
+    height: 70vh;
 }
 .container .store .offline-store{
     background: #00162d;
