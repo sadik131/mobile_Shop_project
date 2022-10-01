@@ -78,6 +78,9 @@ section{
     border-radius: 10px;
   }
 
+  .swiper{
+    z-index: -1 !important;
+  }
 
   @media only screen and (max-width: 600px){
     .container .wrapper .products .product-container{
