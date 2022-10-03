@@ -50,33 +50,28 @@
     </div>
     <div class="discription">
       <div id="content-wrapper">
-		
-
         <div class="column">
-          <img id=featured src="images/shoe1.jpg">
-    
-          <div id="slide-wrapper" >
+          <img id=featured src="../img/fwebp (4).png">
+
+          <div id="slide-wrapper">
             <img id="slideLeft" class="arrow" src="../img/arrow-left.png">
-    
+
             <div id="slider">
               <img class="thumbnail active" src="../img/fwebp (4).png">
               <img class="thumbnail" src="../img/fwebp (5).png">
               <img class="thumbnail" src="../img/fwebp (3).png">
-    
+
               <img class="thumbnail" src="../img/fwebp (4).png">
               <img class="thumbnail" src="../img/fwebp (1).png">
               <img class="thumbnail" src="../img/fwebp (1).webp">
               <img class="thumbnail" src="../img/fwebp (2).png">
             </div>
-    
+
             <img id="slideRight" class="arrow" src="../img/arrow-right.png">
           </div>
         </div>
-    
-        
-    
       </div>
-    
+
       <div class="Phon-info">
         <div class="disign">
           <h1><span>AD</span>desgin</h1>
@@ -114,10 +109,11 @@
       </div>
       <div class="phon-parformance">
         <h1>Big On parfomance</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ad laboriosam quisquam. Necessitatibus esse,quisquam. Necessitatibus esse, veniam molestiae saepe a laborum voluptas!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ad laboriosam quisquam. Necessitatibus
+          esse,quisquam. Necessitatibus esse, veniam molestiae saepe a laborum voluptas!</p>
       </div>
     </div>
-    
+
     <!-- parfomance end -->
 
     <!-- procesor -->
@@ -145,10 +141,10 @@
         </div>
       </div>
     </div>
-  <!--  procesor end -->
+    <!--  procesor end -->
 
 
-  
+
 
   </section>
 
@@ -156,8 +152,7 @@
 
   <!-- footer start -->
   <footer>
-    <svg id="wave" style="transition: 0.3s" viewBox="0 0 1440 160" version="1.1"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg id="wave" style="transition: 0.3s" viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
           <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
@@ -205,39 +200,35 @@
   <script src="https://kit.fontawesome.com/66172103ee.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-		let thumbnails = document.getElementsByClassName('thumbnail')
+    let thumbnails = document.getElementsByClassName('thumbnail')
 
-		let activeImages = document.getElementsByClassName('active')
+    let activeImages = document.getElementsByClassName('active')
 
-		for (var i=0; i < thumbnails.length; i++){
+    for (var i = 0; i < thumbnails.length; i++) {
 
-			thumbnails[i].addEventListener('mouseover', function(){
-				console.log(activeImages)
-				
-				if (activeImages.length > 0){
-					activeImages[0].classList.remove('active')
-				}
-				
-
-				this.classList.add('active')
-				document.getElementById('featured').src = this.src
-			})
-		}
+      thumbnails[i].addEventListener('mouseover', function () {
+        if (activeImages.length > 0) {
+          activeImages[0].classList.remove('active')
+        }
+        this.classList.add('active')
+        document.getElementById('featured').src = this.src
+      })
+    }
 
 
-		let buttonRight = document.getElementById('slideRight');
-		let buttonLeft = document.getElementById('slideLeft');
+    let buttonRight = document.getElementById('slideRight');
+    let buttonLeft = document.getElementById('slideLeft');
 
-		buttonLeft.addEventListener('click', function(){
-			document.getElementById('slider').scrollLeft -= 180
-		})
+    buttonLeft.addEventListener('click', function () {
+      document.getElementById('slider').scrollLeft -= 180
+    })
 
-		buttonRight.addEventListener('click', function(){
-			document.getElementById('slider').scrollLeft += 180
-		})
+    buttonRight.addEventListener('click', function () {
+      document.getElementById('slider').scrollLeft += 180
+    })
 
 
-	</script>
+  </script>
 
 </body>
 
